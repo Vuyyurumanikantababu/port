@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm [VUYYURU MANIKANTA BABU]</h1>
+            <p>I'm a [Software developer and Tester] passionate about [Develop modern projects]</p>
+            <a href="#projects" class="btn">See My Work</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I’m a dedicated developer with a passion for building seamless and efficient digital experiences. My expertise ranges from front-end to back-end development, with a keen eye for design.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Title: Driven Insights:Anticipating Car Sales price Trends using Ensembling Models.
+</h3>
+            <p>Description: Developed a predictive model to anticipate car sales price trends using 
+advanced ensembling techniques. This project involved the application of machine 
+learning algorithms to analyze historical car sales data and identify key factors 
+influencing price trends..</p>
+        </div>
+        <div class="project">
+            <h3>Title: Deep Learning Approach for American Sign Language Alphabets Classification Using Custom CNN.</h3>
+            <p>Description : Developed a custom convolutional neural network (CNN) to classify American Sign Language (ASL) alphabets. The project aimed to build an accurate and efficient model to recognize hand gestures representing ASL letters..</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Technical Skills- C,Python,Html,css</li>
+            <li>Communication Skills</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: [manikanta220903@gmail.com]</p>
+        <p>LinkedIn: [https://www.linkedin.com/in/manikanta-vuyyuru-504870282/]</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Vuyyuru Manikanta Babu. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #444;
+    background-color: #e0f7fa; /* Light cyan background */
+}
+
+header {
+    background-color: #00796b; /* Teal background */
+    padding: 15px 0;
+    color: white;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    background: url('your-background-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 700px;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.6); /* Darker overlay */
+    border-radius: 15px;
+}
+
+.hero-content h1 {
+    font-size: 3rem; /* Larger font size */
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+}
+
+.hero-content .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #004d40; /* Darker teal */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.hero-content .btn:hover {
+    background-color: #00251a; /* Even darker teal on hover */
+}
+
+section {
+    padding: 60px 25px;
+    max-width: 1300px;
+    margin: auto;
+    background-color: #ffffff; /* White background for sections */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Larger shadow */
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 2.5rem; /* Larger font size */
+    color: #00796b; /* Teal color for headings */
+}
+
+#projects .project {
+    background-color: #fafafa; /* Very light grey background */
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Larger shadow */
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+#skills ul li {
+    background-color: #00796b; /* Teal background */
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background-color: #004d40; /* Darker teal */
+    color: white;
+    padding: 25px 0;
+    margin-top: 60px;
+    font-size: 0.9rem; /* Slightly smaller font size */
+}
+
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #hero {
+        height: auto;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem; /* Slightly smaller font size for smaller screens */
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    #skills ul {
+        flex-direction: column;
+    }
+}
